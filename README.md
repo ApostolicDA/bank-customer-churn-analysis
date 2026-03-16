@@ -53,6 +53,24 @@ This analysis addresses the following key questions:
 | GitHub | Project documentation |
 
 ---
+# 📂 Dataset
+
+The dataset contains **10,000 bank customers** with demographic, financial, and behavioral attributes.
+
+Key variables include:
+
+- Customer ID
+- Geography
+- Age
+- Credit Score
+- Number of Bank Products
+- Account Balance
+- Credit Card Ownership
+- Activity Status
+- Churn Indicator (Exited)
+
+The dataset was cleaned and transformed before analytical processing.
+---
 
 # 🏗 Project Architecture
 
