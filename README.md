@@ -70,7 +70,16 @@ Power BI Dashboard
      ▼
 Executive Insights
 ```
+## 🔄 Analytics Pipeline
 
+```mermaid
+flowchart TD
+    A[Raw Dataset] --> B[Python Data Cleaning<br>Jupyter Notebook]
+    B --> C[SQL Data Transformation<br>PostgreSQL]
+    C --> D[Analytical Tables]
+    D --> E[Power BI Dashboard]
+    E --> F[Executive Insights]
+```
 This structure mirrors **enterprise BI pipelines used in real-world analytics teams**.
 
 ---
