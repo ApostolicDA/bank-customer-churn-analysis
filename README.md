@@ -2,46 +2,72 @@
 ![SQL](https://img.shields.io/badge/SQL-Analytics-green)
 ![PowerBI](https://img.shields.io/badge/PowerBI-Dashboard-yellow)
 ![Status](https://img.shields.io/badge/Project-Completed-success)
+
 # 📊 Bank Customer Churn Analysis
 
 A full-stack analytics project combining **Python data engineering, SQL analytics, and Power BI business intelligence** to identify key drivers of customer churn and propose retention strategies.
+
+This project demonstrates a **complete end-to-end analytics workflow used in real business environments**, transforming raw banking data into actionable insights for decision makers.
+
+---
+
+# 📑 Table of Contents
+
+- Project Overview  
+- Key Results  
+- Business Problem  
+- Tech Stack  
+- Dataset  
+- Project Architecture  
+- Data Cleaning (Python)  
+- SQL Data Modeling  
+- KPI Validation  
+- Dashboard Overview  
+- Business Recommendations  
+- Repository Structure  
+- Skills Demonstrated  
+- Contact  
 
 ---
 
 # 📌 Project Overview
 
-The dataset contains **10,000 bank customers** with demographic, financial, and behavioral attributes. 
-The dataset is a publicly available banking churn dataset commonly used for predictive analytics and customer retention studies.
+The dataset contains **10,000 bank customers** with demographic, financial, and behavioral attributes.  
+This dataset is widely used in **customer churn prediction and banking analytics studies**.
 
-The workflow demonstrates a complete **end-to-end analytics pipeline**:
+The workflow simulates the **typical responsibilities of a data analyst in a financial institution**:
 
-- Python for data cleaning and preprocessing
-- SQL for analytical transformations and KPI generation
-- Power BI for executive dashboards
-- SQL validation for dashboard metrics
+1. Data preparation and cleaning using Python  
+2. Analytical transformation and KPI generation using SQL  
+3. Interactive dashboard creation in Power BI  
+4. KPI validation to ensure analytical accuracy  
 
-The objective is to simulate the **real workflow of a data analyst in a banking environment**, transforming raw customer data into actionable insights for leadership teams.
+The goal is to convert **raw customer data into meaningful insights** that help banks reduce churn and improve retention.
 
 ---
+
 # 🚀 Key Results
 
-- Identified **5 major drivers of customer churn** across behavioral, financial, and geographic dimensions
-- Built an **end-to-end analytics pipeline (Python → SQL → Power BI)**
-- Validated **all dashboard KPIs using SQL queries**
-- Discovered **customers with only one product are 4× more likely to churn**
-- Identified **Germany as the highest churn-contributing region**
+- Identified **5 major drivers of customer churn**
+- Built a complete **Python → SQL → Power BI analytics pipeline**
+- Validated **dashboard KPIs using SQL queries**
+- Customers with **only one product are 4× more likely to churn**
+- **Germany contributes the largest share of churned customers**
+- Overall churn rate identified as **20.37%**
+
 ---
 
 # 🧠 Business Problem
 
-Customer churn significantly impacts revenue in the banking sector. Retaining customers is often more cost-effective than acquiring new ones.
+Customer churn significantly impacts revenue in the banking sector.  
+Acquiring a new customer is **significantly more expensive than retaining an existing one**.
 
-This analysis addresses the following key questions:
+This analysis answers the following business questions:
 
 - Which customer segments are most likely to churn?
-- What behavioral and financial attributes drive churn?
-- How does geography influence churn?
-- What strategies can the bank implement to reduce churn?
+- What financial and behavioral factors drive churn?
+- How does geography influence customer attrition?
+- What strategies can reduce churn risk?
 
 ---
 
@@ -51,18 +77,19 @@ This analysis addresses the following key questions:
 |-----|------|
 | Python | Data cleaning and preprocessing |
 | Pandas | Data transformation |
-| Jupyter Notebook | Data preparation workflow |
-| PostgreSQL | Analytical queries and aggregations |
+| Jupyter Notebook | Data preparation |
+| PostgreSQL | Data storage and querying |
 | SQL | KPI generation and validation |
-| Power BI | Interactive dashboards |
-| GitHub | Project documentation |
+| Power BI | Interactive business dashboards |
+| GitHub | Documentation and version control |
 
 ---
+
 # 📂 Dataset
 
-The dataset contains **10,000 bank customers** with demographic, financial, and behavioral attributes.
+The dataset contains **10,000 bank customers**.
 
-Key variables include:
+Key attributes include:
 
 - Customer ID
 - Geography
@@ -74,31 +101,32 @@ Key variables include:
 - Activity Status
 - Churn Indicator (Exited)
 
-The dataset was cleaned and transformed before analytical processing.
+The data was **cleaned, validated, and transformed before analysis**.
+
 ---
 
 # 🏗 Project Architecture
 
-This project follows a layered analytics workflow.
+This project follows a layered analytics pipeline.
 
 ## 🔄 Analytics Pipeline
 
 ```mermaid
 flowchart TD
-    A[Raw Dataset] --> B[Python Data Cleaning<br>Jupyter Notebook]
-    B --> C[SQL Data Transformation<br>PostgreSQL]
-    C --> D[Analytical Tables]
-    D --> E[Power BI Dashboard]
-    E --> F[Executive Insights]
+A[Raw Dataset] --> B[Python Data Cleaning<br>Jupyter Notebook]
+B --> C[SQL Data Transformation<br>PostgreSQL]
+C --> D[Analytical Tables]
+D --> E[Power BI Dashboard]
+E --> F[Executive Insights]
 ```
 
-This structure mirrors **enterprise BI pipelines used in real-world analytics teams**.
+This architecture mirrors **modern business intelligence pipelines used in real organizations**.
 
 ---
 
 # 🧹 Data Cleaning (Python)
 
-Initial preprocessing was performed using Python.
+Initial preprocessing was performed using **Python and Pandas**.
 
 Key steps included:
 
@@ -106,9 +134,9 @@ Key steps included:
 - Standardizing categorical variables
 - Correcting data types
 - Removing duplicate records
-- Exporting a clean dataset for SQL analysis
+- Creating derived features
 
-Example snippet:
+Example code:
 
 ```python
 df.drop_duplicates(inplace=True)
@@ -120,17 +148,17 @@ df['age_group'] = pd.cut(
 )
 ```
 
-Notebook included in the repository:
+Notebook available in:
 
 ```
-notebooks/data_cleaning.ipynb
+Notebook/data_cleaning.ipynb
 ```
 
 ---
 
-# 🗄 SQL Data Modeling & Aggregation
+# 🗄 SQL Data Modeling & Analysis
 
-SQL was used to perform analytical transformations and generate KPIs used in the dashboard.
+SQL was used to generate analytical tables used in the dashboard.
 
 Key analyses performed:
 
@@ -138,7 +166,7 @@ Key analyses performed:
 - Churn by number of products
 - Customer activity vs churn
 - Credit score impact on churn
-- Churn distribution by account balance
+- Balance distribution and churn
 
 Example query:
 
@@ -147,7 +175,7 @@ SELECT geography,
        COUNT(*) AS customers,
        SUM(exited) AS churned_customers,
        ROUND(SUM(exited)::numeric / COUNT(*) * 100,2) AS churn_rate
-FROM bank_customers
+FROM churn_bank
 GROUP BY geography
 ORDER BY churn_rate DESC;
 ```
@@ -156,47 +184,45 @@ ORDER BY churn_rate DESC;
 
 # ✔ KPI Validation (SQL)
 
-To ensure analytical accuracy, all Power BI metrics were validated using SQL queries. 
-Example:
+To ensure analytical accuracy, **Power BI dashboard metrics were validated using SQL queries**.
 
+<p align="center">
+<img src="images/data_validation.png" width="900">
+</p>
 
-
-![Data Validation](images/data_validation.png)
-
-```
-
-This validation step reflects **best practices used in production BI environments**.
-Full Validation Report included in the repository:
-
+This validation approach reflects **best practices used in enterprise BI teams**.
 
 ---
 
 # 📊 Dashboard Overview
 
-
 ## Executive Dashboard
 
-![Executive Dashboard](images/executive_dashboard.png)
+<p align="center">
+<img src="images/executive_dashboard.png" width="900">
+</p>
 
-Provides a high-level overview of churn performance.
+Provides a high-level overview of customer churn.
 
-Metrics included:
+Key metrics:
 
 - Total Customers
 - High Risk Customers
 - Total Churned Customers
 - Overall Churn Rate
 
-Key findings:
+Key insights:
 
-- Overall churn rate is **20.37%**
+- Overall churn rate: **20.37%**
 - **2,521 customers identified as high risk**
 
 ---
 
 ## Churn Risk Drivers Dashboard
 
-![Churn Risk Drivers](./images/Churn_Risk_Drivers.png)
+<p align="center">
+<img src="images/Churn_Risk_Drivers.png" width="900">
+</p>
 
 Major churn drivers identified:
 
@@ -209,11 +235,15 @@ Major churn drivers identified:
 ---
 
 ## Business Insights Dashboard
-![Business Insights](images/Business_insights.png)
-Key insights from the analysis:
 
-- Customers aged **45–55 exhibit the highest churn rates**
-- **Germany contributes the largest share of churned customers**
+<p align="center">
+<img src="images/Business_insights.png" width="900">
+</p>
+
+Key findings:
+
+- Customers aged **45–55 show the highest churn rates**
+- **Germany contributes the largest share of churn**
 - Customers **without credit cards churn significantly more**
 - **Lower credit score segments show the highest churn probability**
 
@@ -221,47 +251,47 @@ Key insights from the analysis:
 
 # 💡 Business Recommendations
 
-Based on the analysis, the following strategies are recommended:
-
 ### Increase Product Adoption
-Customers with only one banking product show significantly higher churn.
+
+Customers with only one banking product show higher churn rates.
 
 Strategy:
 
 - Introduce bundled financial products
-- Incentivize multi-product adoption
+- Offer loyalty incentives for multi-product adoption
 
 ---
 
 ### Re-Engage Inactive Customers
 
-Inactive members show substantially higher churn risk.
+Inactive customers show significantly higher churn risk.
 
 Strategy:
 
 - Launch targeted engagement campaigns
-- Personalized digital outreach programs
+- Provide personalized digital banking offers
 
 ---
 
-### Target High-Risk Regions
+### Focus on High-Risk Regions
 
-Certain markets show elevated churn levels.
+Certain regions show higher churn levels.
 
 Strategy:
 
-- Implement localized retention strategies in high-risk regions such as Germany.
+- Implement localized retention programs
+- Deploy targeted marketing strategies in high-risk regions
 
 ---
 
 ### Support Financially Vulnerable Customers
 
-Customers with lower credit scores show higher churn probability.
+Customers with low credit scores show elevated churn risk.
 
 Strategy:
 
-- Offer flexible financial products
-- Introduce credit improvement programs
+- Provide financial advisory services
+- Introduce credit-building products
 
 ---
 
@@ -271,20 +301,21 @@ Strategy:
 bank-customer-churn-analysis
 │
 ├── dashboards
-│ └── Bank_churn_final_dash.pbix # Power BI dashboard
+│   └── Bank_churn_final_dash.pbix
 │
 ├── images
-│ ├── Executive_Dashboard.png # Main dashboard overview
-│ ├── business_insights.png # Key business insights
-│ └── churn_risk_drivers.png # Drivers of customer churn
+│   ├── executive_dashboard.png
+│   ├── Business_insights.png
+│   ├── Churn_Risk_Drivers.png
+│   └── data_validation.png
 │
-├── notebooks
-│ └── data_cleaning.ipynb # Data cleaning and preprocessing (Python)
+├── Notebook
+│   └── data_cleaning.ipynb
 │
 ├── sql
-│ └── churn_bank_sql_script.sql # SQL queries used for analysis
+│   └── churn_bank_sql_script.sql
 │
-└── README.md # Project documentation
+└── README.md
 ```
 
 ---
@@ -294,27 +325,34 @@ bank-customer-churn-analysis
 This project demonstrates:
 
 ✔ End-to-end analytics workflow  
-✔ Python-based data engineering  
+✔ Python data cleaning and transformation  
 ✔ Advanced SQL analytical queries  
-✔ BI dashboard development  
-✔ Data validation best practices  
-✔ Business-driven insights and recommendations
+✔ Power BI dashboard design  
+✔ KPI validation best practices  
+✔ Business-driven insights
 
-The project reflects the responsibilities of a **modern data analyst working in financial services or business intelligence teams**.
+The project reflects the responsibilities of a **modern data analyst working in financial services or BI teams**.
+
 ---
+
 # 🧠 Skills Demonstrated
 
-- Data Cleaning and Transformation (Python / Pandas)
-- Analytical SQL and Aggregations
-- Data Validation and KPI Verification
+- Data Cleaning (Python / Pandas)
+- SQL Analytics and Aggregation
+- Data Validation
 - Business Intelligence Dashboard Design
-- Customer Segmentation Analysis
-- Churn Risk Identification
-- Business Recommendation Development
+- Customer Segmentation
+- Churn Risk Analysis
+- Data-Driven Decision Making
+
+---
 
 # 📬 Contact
 
 If you would like to discuss this project or collaborate on analytics work:
 
-**LinkedIn:** ([Proud Ndlovu](https://www.linkedin.com/in/proud-ndlovu-89070854/))  
-**Email:** [Fanisaproud@gmail.com](fanisaproud@gmail.com)
+**LinkedIn:**  
+https://www.linkedin.com/in/proud-ndlovu-89070854/
+
+**Email:**  
+Fanisaproud@gmail.com
