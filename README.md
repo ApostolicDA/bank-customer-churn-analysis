@@ -51,26 +51,6 @@ This analysis addresses the following key questions:
 This project follows a layered analytics workflow.
 
 ```
-Raw Dataset
-     │
-     ▼
-Python Data Cleaning
-(Jupyter Notebook)
-     │
-     ▼
-SQL Data Transformation
-(PostgreSQL)
-     │
-     ▼
-Analytical Tables
-     │
-     ▼
-Power BI Dashboard
-     │
-     ▼
-Executive Insights
-```
-## 🔄 Analytics Pipeline
 
 ```mermaid
 flowchart TD
@@ -80,6 +60,7 @@ flowchart TD
     D --> E[Power BI Dashboard]
     E --> F[Executive Insights]
 ```
+## 🔄 Analytics Pipeline
 This structure mirrors **enterprise BI pipelines used in real-world analytics teams**.
 
 ---
