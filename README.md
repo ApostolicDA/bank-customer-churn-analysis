@@ -50,7 +50,6 @@ This analysis addresses the following key questions:
 
 This project follows a layered analytics workflow.
 
-```
 ## 🔄 Analytics Pipeline
 
 ```mermaid
