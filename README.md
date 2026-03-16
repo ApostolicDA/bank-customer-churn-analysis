@@ -276,25 +276,23 @@ Strategy:
 # 📂 Repository Structure
 
 ```
-bank-churn-analysis
-│
-├── data
-│
-├── notebooks
-│   └── data_cleaning.ipynb
-│
-├── sql
-│   ├── transformations.sql
-│   ├── kpi_queries.sql
-│   └── validation_queries.sql
+bank-customer-churn-analysis
 │
 ├── dashboards
-│   └── powerbi_dashboard.pbix
+│ └── Bank_churn_final_dash.pbix # Power BI dashboard
 │
 ├── images
-│   └── dashboard_screenshots
+│ ├── Executive_Dashboard.png # Main dashboard overview
+│ ├── business_insights.png # Key business insights
+│ └── churn_risk_drivers.png # Drivers of customer churn
 │
-└── README.md
+├── notebooks
+│ └── data_cleaning.ipynb # Data cleaning and preprocessing (Python)
+│
+├── sql
+│ └── churn_bank_sql_script.sql # SQL queries used for analysis
+│
+└── README.md # Project documentation
 ```
 
 ---
