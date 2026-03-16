@@ -1,5 +1,8 @@
 # 📊 Bank Customer Churn Analysis
-
+![Python](https://img.shields.io/badge/Python-Data%20Cleaning-blue)
+![SQL](https://img.shields.io/badge/SQL-Analytics-green)
+![PowerBI](https://img.shields.io/badge/PowerBI-Dashboard-yellow)
+![Status](https://img.shields.io/badge/Project-Completed-success)
 A full-stack analytics project combining **Python data engineering, SQL analytics, and Power BI business intelligence** to identify key drivers of customer churn and propose retention strategies.
 
 ---
