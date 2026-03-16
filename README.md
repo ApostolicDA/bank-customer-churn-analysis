@@ -321,3 +321,10 @@ The project reflects the responsibilities of a **modern data analyst working in 
 - Customer Segmentation Analysis
 - Churn Risk Identification
 - Business Recommendation Development
+
+# 📬 Contact
+
+If you would like to discuss this project or collaborate on analytics work:
+
+**LinkedIn:** ([your link](https://www.linkedin.com/in/proud-ndlovu-89070854/))  
+**Email:** (fanisaproud@gmail.com)
