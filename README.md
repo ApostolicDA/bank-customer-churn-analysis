@@ -165,15 +165,9 @@ Example:
 
 ```
 
-Validated KPI values:
-
-| Metric | Value |
-|------|------|
-| Total Customers | 10,000 |
-| Churned Customers | 2,037 |
-| Churn Rate | 20.37% |
-
 This validation step reflects **best practices used in production BI environments**.
+Full Validation Report included in the repository:
+
 
 ---
 
