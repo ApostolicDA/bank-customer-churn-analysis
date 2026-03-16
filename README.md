@@ -326,5 +326,5 @@ The project reflects the responsibilities of a **modern data analyst working in 
 
 If you would like to discuss this project or collaborate on analytics work:
 
-**LinkedIn:** ([your link](https://www.linkedin.com/in/proud-ndlovu-89070854/))  
-**Email:** (fanisaproud@gmail.com)
+**LinkedIn:** ([Proud Ndlovu](https://www.linkedin.com/in/proud-ndlovu-89070854/))  
+**Email:** [My Email](fanisaproud@gmail.com)
