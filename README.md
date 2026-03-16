@@ -204,7 +204,7 @@ Key findings:
 
 ## Churn Risk Drivers Dashboard
 
-
+![Churn Risk Drivers](images/churn_risk_drivers.png)
 
 Major churn drivers identified:
 
