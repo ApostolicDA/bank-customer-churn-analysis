@@ -51,6 +51,7 @@ This analysis addresses the following key questions:
 This project follows a layered analytics workflow.
 
 ```
+## 🔄 Analytics Pipeline
 
 ```mermaid
 flowchart TD
@@ -60,7 +61,7 @@ flowchart TD
     D --> E[Power BI Dashboard]
     E --> F[Executive Insights]
 ```
-## 🔄 Analytics Pipeline
+
 This structure mirrors **enterprise BI pipelines used in real-world analytics teams**.
 
 ---
