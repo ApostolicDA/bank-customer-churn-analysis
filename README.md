@@ -204,7 +204,7 @@ Key findings:
 
 ## Churn Risk Drivers Dashboard
 
-![Churn Risk Drivers](images/churn_risk_drivers.png)
+![Churn Risk Drivers](images/Churn_Risk_Drivers.png)
 
 Major churn drivers identified:
 
@@ -217,7 +217,7 @@ Major churn drivers identified:
 ---
 
 ## Business Insights Dashboard
-![Business Insights](images/business_insights.png)
+![Business Insights](images/Business_insights.png)
 Key insights from the analysis:
 
 - Customers aged **45–55 exhibit the highest churn rates**
