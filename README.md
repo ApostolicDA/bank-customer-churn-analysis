@@ -306,3 +306,13 @@ This project demonstrates:
 ✔ Business-driven insights and recommendations
 
 The project reflects the responsibilities of a **modern data analyst working in financial services or business intelligence teams**.
+---
+# 🧠 Skills Demonstrated
+
+- Data Cleaning and Transformation (Python / Pandas)
+- Analytical SQL and Aggregations
+- Data Validation and KPI Verification
+- Business Intelligence Dashboard Design
+- Customer Segmentation Analysis
+- Churn Risk Identification
+- Business Recommendation Development
