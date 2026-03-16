@@ -156,7 +156,8 @@ ORDER BY churn_rate DESC;
 
 # ✔ KPI Validation (SQL)
 
-To ensure analytical accuracy, all Power BI metrics were validated using SQL queries.
+To ensure analytical accuracy, all Power BI metrics were validated using SQL queries. 
+Example:
 
 
 
