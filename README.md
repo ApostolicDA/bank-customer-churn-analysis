@@ -160,12 +160,8 @@ To ensure analytical accuracy, all Power BI metrics were validated using SQL que
 
 Example:
 
-```sql
-SELECT 
-COUNT(*) AS total_customers,
-SUM(exited) AS churned_customers,
-ROUND(SUM(exited)::numeric / COUNT(*) * 100,2) AS churn_rate
-FROM bank_customers;
+```
+![Data Validation](data_validation.png)
 ```
 
 Validated KPI values:
