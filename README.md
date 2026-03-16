@@ -184,7 +184,7 @@ This validation step reflects **best practices used in production BI environment
 
 ## Executive Dashboard
 
-![Executive Dashboard](images/Executive_Dashboard.png)
+![Executive Dashboard](images/executive_dashboard.png)
 
 Provides a high-level overview of churn performance.
 
