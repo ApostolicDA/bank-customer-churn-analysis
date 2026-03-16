@@ -158,9 +158,8 @@ ORDER BY churn_rate DESC;
 
 To ensure analytical accuracy, all Power BI metrics were validated using SQL queries.
 
-Example:
 
-```
+
 ![Data Validation](images/data_validation.png)
 
 ```
