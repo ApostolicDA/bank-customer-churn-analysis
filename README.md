@@ -18,6 +18,14 @@ The workflow demonstrates a complete **end-to-end analytics pipeline**:
 The objective is to simulate the **real workflow of a data analyst in a banking environment**, transforming raw customer data into actionable insights for leadership teams.
 
 ---
+# 🚀 Key Results
+
+- Identified **5 major drivers of customer churn** across behavioral, financial, and geographic dimensions
+- Built an **end-to-end analytics pipeline (Python → SQL → Power BI)**
+- Validated **all dashboard KPIs using SQL queries**
+- Discovered **customers with only one product are 4× more likely to churn**
+- Identified **Germany as the highest churn-contributing region**
+---
 
 # 🧠 Business Problem
 
