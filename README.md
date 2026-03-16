@@ -10,7 +10,8 @@ A full-stack analytics project combining **Python data engineering, SQL analytic
 
 # 📌 Project Overview
 
-This project analyzes **10,000 bank customers** to identify the primary drivers of churn and recommend data-driven retention strategies.
+The dataset contains **10,000 bank customers** with demographic, financial, and behavioral attributes. 
+The dataset is a publicly available banking churn dataset commonly used for predictive analytics and customer retention studies.
 
 The workflow demonstrates a complete **end-to-end analytics pipeline**:
 
