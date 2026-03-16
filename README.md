@@ -163,7 +163,7 @@ This validation step reflects **best practices used in production BI environment
 
 ## Executive Dashboard
 
-![Executive Dashboard](Executive_Dashboard.png)
+![Churn Risk Drivers](churn_risk_drivers.png)
 
 Provides a high-level overview of churn performance.
 
@@ -182,6 +182,8 @@ Key findings:
 ---
 
 ## Churn Risk Drivers Dashboard
+
+![Churn Risk Drivers](churn_risk_drivers.png)
 
 Major churn drivers identified:
 
