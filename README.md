@@ -11,7 +11,7 @@
 ![Churn Drivers](images/Churn_Risk_Drivers.png)
 ![Business Insights](images/Business_insights.png)
 
-🔗 Download Full Dashboard (PBIX): dashboards/Bank_churn_final_dash.pbix
+🔗 Download Full Dashboard (PBIX): dashboards/Bank_churn.pbix
 
 ## 💡 Key Insights (TL;DR)
 
