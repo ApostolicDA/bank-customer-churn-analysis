@@ -13,6 +13,14 @@
 
 🔗 Download Full Dashboard (PBIX): dashboards/Bank_churn_final_dash.pbix
 
+## 💡 Key Insights (TL;DR)
+
+- Churn rate: **20.37%**
+- Customers with 1 product are **4× more likely to churn**
+- Germany has the highest churn concentration
+- Inactive customers are the highest-risk segment
+- 2,521 customers identified as high-risk
+
 A full-stack analytics project combining **Python data engineering, SQL analytics, and Power BI business intelligence** to identify key drivers of customer churn and propose retention strategies.
 
 This project demonstrates a **complete end-to-end analytics workflow used in real business environments**, transforming raw banking data into actionable insights for decision makers.
