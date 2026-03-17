@@ -202,7 +202,7 @@ ORDER BY churn_rate DESC;
 
 ## 🧪 Data Validation (Key Differentiator)
 
-All dashboard KPIs were independently validated using SQL queries to ensure accuracy.
+All dashboard KPIs were independently validated using SQL queries to ensure accuracy. Example:
 
 ![Validation](images/data_validation.png)
 
