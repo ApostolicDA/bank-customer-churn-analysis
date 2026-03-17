@@ -200,11 +200,11 @@ ORDER BY churn_rate DESC;
 
 # ✔ KPI Validation (SQL)
 
-To ensure analytical accuracy, **Power BI dashboard metrics were validated using SQL queries**.
+## 🧪 Data Validation (Key Differentiator)
 
-<p align="center">
-<img src="images/data_validation.png" width="900">
-</p>
+All dashboard KPIs were independently validated using SQL queries to ensure accuracy.
+
+![Validation](images/data_validation.png)
 
 This validation approach reflects **best practices used in enterprise BI teams**.
 
