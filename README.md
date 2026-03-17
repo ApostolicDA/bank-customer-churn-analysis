@@ -12,6 +12,7 @@
 ![Business Insights](images/Business_insights.png)
 
 🔗 Download Full Dashboard (PBIX): dashboards/Bank_churn.pbix
+
 🔐Full interactive dashboard available upon request
 
 ## 💡 Key Insights (TL;DR)
